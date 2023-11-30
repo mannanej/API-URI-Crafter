@@ -1,7 +1,7 @@
 from subprocess import call
 call("python -m ensurepip --upgrade", shell = True)
 call("python -m pip install colorama", shell = True)
-from colorama import Fore, Back, Style
+from colorama import Fore, Style
 
 BASEURI = "https://localhost/MESMW/"
 REQUESTURI = "api/v3/DirectAccess/?spName="
