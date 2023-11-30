@@ -1,3 +1,4 @@
+from colorama import Fore, Back, Style
 
 BASEURI = "https://localhost/MESMW/"
 REQUESTURI = "api/v3/DirectAccess/?spName="
@@ -35,13 +36,13 @@ def main():
     print("----------------------------------------")
     print("The Base URI Is: ", BASEURI)
     print("The Request URI Is: ", REQUESTURI)
-    print("The POST Data Is: ", POSTDATA)
+    print("The POST Data Is: ", Fore.BLUE, POSTDATA, Style.RESET_ALL)
     return
 ####################################################################################################################################
 # This is a call to main to get the ball rolling
 if __name__ == '__main__':
-    print("PROGRAM START")
+    print(Fore.YELLOW, "PROGRAM START", Style.RESET_ALL)
     main()
-    print("PROGRAM END")
+    print(Fore.YELLOW, "PROGRAM END", Style.RESET_ALL)
 # END FILE
 ####################################################################################################################################
