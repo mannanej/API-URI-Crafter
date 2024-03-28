@@ -1,3 +1,4 @@
+##### FOR REAL USE, USE THE CRAFTER FILE #####
 from subprocess import call
 call("python -m ensurepip --upgrade", shell = True)
 call("python -m pip install colorama", shell = True)
