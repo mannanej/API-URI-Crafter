@@ -93,7 +93,7 @@ def Query():
     for i in range(0, len(values), 2):
         if values[i + 1] == "nvarchar":
             POSTDATA += """ \\" """ + values[i][1:] + """ \\":\\""+ """ + XMLVAR + """ +"\\", """
-        elif values[i + 1] == "int":
+        else:
             POSTDATA += """ \\" """ + values[i][1:] + """ \\":"+ """ + XMLVAR + """ +", """
     # Remove the final comma, add a cap, and remove spaces
     POSTDATA = POSTDATA.replace(" ", "")
